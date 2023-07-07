@@ -8,10 +8,6 @@ type P = {item: string}
 const navbarData = {
   pages: [
       {
-        title: 'Home',
-        url: '/',
-      },
-      {
         title: 'About',
         url: '/about',
       },
@@ -29,6 +25,11 @@ export default class Navbar extends React.Component {
     return (
       <div className={styles.navbar}>
         <>
+          <div>
+            <Link href="/" className={styles.link}>
+              Isaac-T
+            </Link>
+          </div>
           <div>
             {navbarData.pages.map((page) => (
               <Link key={page.title} href={page.url} className={styles.link}>
