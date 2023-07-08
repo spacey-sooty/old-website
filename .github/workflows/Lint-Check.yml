@@ -7,7 +7,7 @@ on:
     branches: [ "master" ]
 
 jobs:
-  Ubuntu-Build:
+  Ubuntu-Lint:
 
     runs-on: ubuntu-latest
 
@@ -18,7 +18,7 @@ jobs:
     - name: Build
       run: yarn run lint
 
-  Windows-Build:
+  Windows-Lint:
 
     runs-on: windows-latest
 
