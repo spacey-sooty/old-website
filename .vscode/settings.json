@@ -1,3 +1,4 @@
 {
   "vim.easymotion": true,
+  "editor.tabSize": 2
 }
