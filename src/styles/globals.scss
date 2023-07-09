@@ -4,8 +4,13 @@
 
 h1 {
   text-align: center;
+  font-size: 250%;
 }
 
 p {
   font-size: larger;
+}
+
+:root {
+  background-color:color-mix(in srgb, pink 80%, purple 20%);
 }
