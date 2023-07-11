@@ -10,8 +10,7 @@ export default function Footer() {
       </div>
       <div className={styles.bottomPageRight}>
         <Link href="https://github.com/spacey-sooty/Isaac-T" className={styles.sourceCode}>
-          {"Source Code"}
-          <BsGithub size={25} color='black'/>
+          {"Source Code"} <BsGithub size={25} color='black'/>
         </Link>
       </div>
     </div>
