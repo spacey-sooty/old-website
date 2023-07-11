@@ -1,10 +1,11 @@
 "use client"
 import React from 'react';
-import { BsGithub } from "react-icons/bs";
+import { BsGithub, BsDiscord } from "react-icons/bs";
 import Head from "next/head";
 import Link from "next/link";
+import styles from '@/styles/components/socials.module.scss'
 
-export default function SocialsLink(props: {name: string, logo: React.ReactNode, url: string}) {
+export default function SocialsLink(props: {name: string, logo: React.ReactNode, url: string, Name: string }) {
   return (
     <div>
       <Head>
@@ -17,9 +18,8 @@ export default function SocialsLink(props: {name: string, logo: React.ReactNode,
         <meta key="googlebot" name="googlebot" content="index,follow" />
       </Head>
       <div className="column">
-        <Link className="icon" href={props.url}>
-          {props.logo} {props.name}
-          {/* <p className={styles.besideLogo}>{props.name}</p> */}
+        <Link className={props.Name} href={props.url} >
+          {props.logo} {" "} {props.name}
         </Link>
       </div>
     </div>
@@ -30,13 +30,17 @@ export default function SocialsLink(props: {name: string, logo: React.ReactNode,
 function Github() {
   return (
     <div className="hero">
-        <SocialsLink
-          name={"Github"}
-          logo={<BsGithub size={65}/>}
-          url={"https://github.com/spacey-sooty"}
-        />
+      <SocialsLink name={"Github"} logo={<BsGithub size={35} color='black'/>} url={"https://github.com/spacey-sooty"} Name={styles.gh} />
     </div>
   )
 }
 
-export { Github }
+function Discord() {
+  return (
+    <div className='hero'>
+      <SocialsLink name={"Discord"} logo={<BsDiscord size={35} color='black' />} url="" Name={styles.discord} />
+    </div>
+  )
+}
+
+export { Github, Discord }

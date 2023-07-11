@@ -20,12 +20,6 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-}
-
-.icon {
-  height: 100%;
-  vertical-align: middle;
 }
 
 .column {
@@ -34,7 +28,4 @@ p {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
-  color: black;
 }
