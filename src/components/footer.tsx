@@ -9,10 +9,9 @@ export default function Footer() {
         <p> Copyright (c) 2023 Isaac Turner </p>
       </div>
       <div className={styles.bottomPageRight}>
-        {/* <p className={styles.left}> Copyright (c) 2023 Isaac Turner </p> */}
         <Link href="https://github.com/spacey-sooty/Isaac-T" className={styles.sourceCode}>
           {"Source Code"}
-          <BsGithub size={25} />
+          <BsGithub size={25} color='black'/>
         </Link>
       </div>
     </div>

@@ -6,7 +6,7 @@ export default function Home() {
   const h = 1352 * 0.25;
   return(
     <div className='hero'>
-      <div className={styles.centered}>
+      <div>
         <h1 className={styles.heading}> Hi my name is Isaac Turner! </h1>
         <Image src="/me.jpg" alt="Isaac Turner" width={w} height={h} className={styles.image} priority />
         <p className={styles.text}>

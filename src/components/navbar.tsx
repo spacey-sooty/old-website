@@ -1,10 +1,8 @@
 "use client"
 import React from "react";
-import Link from "next/link"
 import styles from '@/styles/components/navbar.module.scss'
 import NavLink from "./navlink";
 
-type P = {item: string}
 
 const navbarData = {
   pages: [
@@ -24,8 +22,6 @@ const navbarData = {
 }
 
 export default class Navbar extends React.Component {
-  constructor(props: P) {super(props)}
-
   render(): React.JSX.Element {
     return (
       <div className={styles.navbar}>

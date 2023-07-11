@@ -1,4 +1,3 @@
-"use client"
 import React from 'react';
 import { BsGithub, BsDiscord } from "react-icons/bs";
 import Head from "next/head";
