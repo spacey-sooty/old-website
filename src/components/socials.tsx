@@ -27,7 +27,7 @@ function Github() {
 function Discord() {
   return (
     <div className='hero'>
-      <SocialsLink name={"Discord"} logo={<BsDiscord size={35} color='black' />} url="" Name={styles.discord} />
+      <SocialsLink name={"Discord"} logo={<BsDiscord size={35} color='white' />} url="" Name={styles.discord} />
     </div>
   )
 }
