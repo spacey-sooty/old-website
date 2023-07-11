@@ -37,21 +37,19 @@ const navbarData = {
   ],
 }
 
-export default class Navbar extends React.Component {
-  render(): React.JSX.Element {
-    return (
-      <div className={styles.navbar}>
-        <>
-          <div>
-            <NavLink title="Home" url="/"/>
-          </div>
-          <div className={styles.right}>
-            {navbarData.pages.map((page) => (
-              <NavLink key={page.title} title={page.title} url={page.url} />
-            ))}
-          </div>
-        </>
-      </div>
-    )
-  }
+export default function Navbar() {
+  return (
+    <div className={styles.navbar}>
+      <>
+        <div>
+          <NavLink title="Home" url="/" />
+        </div>
+        <div className={styles.right}>
+          {navbarData.pages.map((page) => (
+            <NavLink key={page.title} title={page.title} url={page.url} />
+          ))}
+        </div>
+      </>
+    </div>
+  )
 }
