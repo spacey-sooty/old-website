@@ -31,20 +31,11 @@ export default class Navbar extends React.Component {
       <div className={styles.navbar}>
         <>
           <div>
-            <Link href="/" className={styles.link}>
-              Isaac-T
-            </Link>
+            <NavLink title="Home" url="/" />
           </div>
-          {/* <div>
-            <NavLink url="/" className={styles.link}>
-              Home
-            </NavLink>
-          </div> */}
           <div>
             {navbarData.pages.map((page) => (
-              <Link key={page.title} href={page.url} className={styles.link}>
-                {page.title}
-              </Link>
+              <NavLink key={page.title} title={page.title} url={page.url} />
             ))}
           </div>
         </>

@@ -33,3 +33,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Temporary ignore for production and preview
+.github/workflows/Preview.yml
+.github/workflows/Production.yml

@@ -1,4 +1,4 @@
-import { Github } from "@/components/post"
+import { Github } from "@/components/socials"
 
 export default function Socials() {
 	return (

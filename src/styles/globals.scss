@@ -14,3 +14,27 @@ p {
 :root {
   background-color:color-mix(in srgb, pink 80%, purple 20%);
 }
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.icon {
+  height: 100%;
+  vertical-align: middle;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: black;
+}
