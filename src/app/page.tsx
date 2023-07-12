@@ -13,8 +13,8 @@ export default function Home() {
         I am a student, software developer and programmer for 
         <a href="http://firstaustralia.org/programs/first-robotics-competition/" className={styles.link}> FIRST Robotics Competition </a> 
         Team <a href="" className={styles.link}> 4788 Cant Control </a> from Perth, Western Australia. <br />
-        I program a variety of things for the team and as an individual. Some common of my things I code are website frontends, robots and computer vision. 
-        I am also learning to code website backends, operating systems and compilers. <br /> The source code for this website can be found on <a href='https://github.com/spacey-sooty/Isaac-T' className={styles.link}>Github</a>.
+        I program a variety of things for the team and as an individual. Some common of my things I code are website frontends, robots, and computer vision. 
+        I am also learning to code website backends, operating systems, and compilers. <br /> The source code for this website can be found on <a href='https://github.com/spacey-sooty/Isaac-T' className={styles.link}>Github</a>.
         </p>
       </div>
     </div>

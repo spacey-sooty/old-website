@@ -1,11 +1,11 @@
 "use client"
-import React from "react";
+import React, {useEffect} from "react";
 import styles from '@/styles/components/navbar.module.scss'
 import Link from 'next/link'
 
 function isActive(url: string): string {
   var root = window.location.host;
-  url = "http://" + root + url
+  url = "http://" + root + url;
   var className = (url == window.location.href) ? styles.active : styles.inactive;
   return className;
 }
@@ -17,8 +17,6 @@ function NavLink(input: {title: string, url: string}) {
       </Link>
   )
 }
-
-
 
 const navbarData = {
   pages: [
