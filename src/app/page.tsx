@@ -11,10 +11,10 @@ export default function Home() {
         <Image src="/me.png" alt="Isaac Turner" width={w} height={h} className={styles.image} priority />
         <p className={styles.text}>
         I am a student, software developer and programmer for 
-        <a href="http://firstaustralia.org/programs/first-robotics-competition/" className={styles.link}> FIRST Robotics Competition </a> 
-        Team <a href="" className={styles.link}> 4788 Cant Control </a> from Perth, Western Australia. <br />
-        I program a variety of things for the team and as an individual. Some common of my things I code are website frontends, robots, and computer vision. 
-        I am also learning to code website backends, operating systems, and compilers. <br /> The source code for this website can be found on <a href='https://github.com/spacey-sooty/Isaac-T' className={styles.link}>Github</a>.
+        <a href="http://firstaustralia.org/programs/first-robotics-competition/" className="link"> FIRST Robotics Competition </a> 
+        Team <a href="" className="link"> 4788 Cant Control </a> from Perth, Western Australia.
+        <br /> The source code for this website can be found on <a href='https://github.com/spacey-sooty/Isaac-T' className="link">Github</a>.
+        <br /> To learn more check out the other pages! 
         </p>
       </div>
     </div>
