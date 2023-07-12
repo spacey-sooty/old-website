@@ -1,5 +1,5 @@
 "use client"
-import React, {useEffect} from "react";
+import React from "react";
 import styles from '@/styles/components/navbar.module.scss'
 import Link from 'next/link'
 
