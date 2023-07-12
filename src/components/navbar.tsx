@@ -1,9 +1,22 @@
 "use client"
 import React from "react";
-import Link from "next/link"
 import styles from '@/styles/components/navbar.module.scss'
+import Link from 'next/link'
 
-type P = {item: string}
+function isActive(url: string): string {
+  var root = window.location.host;
+  url = "http://" + root + url;
+  var className = (url == window.location.href) ? styles.active : styles.inactive;
+  return className;
+}
+
+function NavLink(input: {title: string, url: string}) {
+  return (
+      <Link href={input.url} className={isActive(input.url)} onClick={window.location.reload}>
+        {input.title}
+      </Link>
+  )
+}
 
 const navbarData = {
   pages: [
@@ -15,30 +28,26 @@ const navbarData = {
         title: 'Socials',
         url: '/socials',
       },
+      {
+        title: 'Portfolio',
+        url: '/portfolio'
+      },
   ],
 }
 
-export default class Navbar extends React.Component {
-  constructor(props: P) {super(props)}
-
-  render(): React.JSX.Element {
-    return (
-      <div className={styles.navbar}>
-        <>
-          <div>
-            <Link href="/" className={styles.link}>
-              Isaac-T
-            </Link>
-          </div>
-          <div>
-            {navbarData.pages.map((page) => (
-              <Link key={page.title} href={page.url} className={styles.link}>
-                {page.title}
-              </Link>
-            ))}
-          </div>
-        </>
-      </div>
-    )
-  }
+export default function Navbar() {
+  return (
+    <div className={styles.navbar}>
+      <>
+        <div>
+          <NavLink title="Home" url="/" />
+        </div>
+        <div className={styles.right}>
+          {navbarData.pages.map((page) => (
+            <NavLink key={page.title} title={page.title} url={page.url} />
+          ))}
+        </div>
+      </>
+    </div>
+  )
 }

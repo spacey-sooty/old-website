@@ -4,11 +4,22 @@
   width: 100%;
   margin-left: -10px;
   margin-top: -7.7px;
+  min-width: 1561px;
 }
 
-.link {
-  color: white;
-  margin: 20px;
+.active {
+  margin: 15px;
   font-size: 35px;
+  color: aqua;
 }
 
+.inactive {
+  margin: 15px;
+  font-size: 35px;
+  color: white;
+}
+
+.right {
+  position: absolute;
+  right: 10px;
+}

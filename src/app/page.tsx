@@ -2,17 +2,19 @@ import styles from '@/styles/pages/page.module.scss'
 import Image from 'next/image'
 
 export default function Home() {
+  const w = 794 * 0.44;
+  const h = 968 * 0.44;
   return(
-    <div>
+    <div className='hero'>
       <div>
-        <h1 className={styles.heading}> Hi I am Isaac Turner! </h1>
-        <Image src="/me.jpg" alt="Isaac Turner" width={417} height={507} className={styles.image}/>
+        <h1 className={styles.heading}> Hi my name is Isaac Turner! </h1>
+        <Image src="/me.png" alt="Isaac Turner" width={w} height={h} className={styles.image} priority />
         <p className={styles.text}>
-        I am a student from Western Australia and a programmer for 
+        I am a student, software developer and programmer for 
         <a href="http://firstaustralia.org/programs/first-robotics-competition/" className={styles.link}> FIRST Robotics Competition </a> 
-        Team <a href="" className={styles.link}> 4788 Cant Control </a>. 
-        I program a variety of things for the team and as an individual. Some common of my specialties are website frontends, robots and computer vision. 
-        I am also learning to code website backends, operating systems and compilers. 
+        Team <a href="" className={styles.link}> 4788 Cant Control </a> from Perth, Western Australia. <br />
+        I program a variety of things for the team and as an individual. Some common of my things I code are website frontends, robots, and computer vision. 
+        I am also learning to code website backends, operating systems, and compilers. <br /> The source code for this website can be found on <a href='https://github.com/spacey-sooty/Isaac-T' className={styles.link}>Github</a>.
         </p>
       </div>
     </div>

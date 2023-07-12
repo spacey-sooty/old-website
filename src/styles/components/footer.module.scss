@@ -1,0 +1,19 @@
+.sourceCode {
+  display: flex;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.bottomPageRight {
+  position:absolute;
+  right: 5px;
+  bottom: 15px;
+}
+
+.bottomPageLeft {
+  position: absolute;
+  bottom: 0px;
+  left: 5px;
+  font-size: 15px;
+}
