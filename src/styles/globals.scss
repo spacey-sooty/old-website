@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "Moonbeam Regular";
+    src: url("https://db.onlinewebfonts.com/t/3a775cc0fc167a7000d81c790839b807.eot");
+    src: url("https://db.onlinewebfonts.com/t/3a775cc0fc167a7000d81c790839b807.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/3a775cc0fc167a7000d81c790839b807.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/3a775cc0fc167a7000d81c790839b807.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/3a775cc0fc167a7000d81c790839b807.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/3a775cc0fc167a7000d81c790839b807.svg#Moonbeam Regular")format("svg");
+}
+
 * {
   box-sizing: border-box;
 }
@@ -7,6 +17,11 @@ h1 {
   font-size: 250%;
 }
 
+h2 {
+  text-align: center;
+  font-size: 200%;
+}
+
 p {
   font-size: 125%;
 }
@@ -14,6 +29,9 @@ p {
 :root {
   background-color: rgb(251, 135, 226);
   color: black;
+  h1, h2 {
+    font-family: "Moonbeam Regular";
+  }
 }
 
 .hero {
@@ -24,5 +42,5 @@ p {
 }
 
 .link {
-  color: yellow;
+  color: rgb(23, 226, 236);
 }
