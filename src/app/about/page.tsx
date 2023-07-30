@@ -8,7 +8,7 @@ export default function About() {
         <p>
           I program a variety of things for the team and as an individual. Some common things I code are website frontends, robots, and computer 
           vision systems. I am also learning to code website backends, operating systems, and compilers. I program in many different languages 
-          but some of my {"favourite's"} are Rust, C++ and Dart. 
+          but some of my favourite&apos;s are Rust, C++ and Dart. 
         </p>
       </div>
     </div>
