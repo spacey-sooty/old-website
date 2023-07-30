@@ -12,7 +12,7 @@ export default function Home() {
         <p className={styles.text}>
         I am a student, software developer and programmer for 
         <a href="http://firstaustralia.org/programs/first-robotics-competition/" className="link"> FIRST Robotics Competition </a> 
-        Team <a href="" className="link"> 4788 Cant Control </a> from Perth, Western Australia.
+        Team <a href="" className="link"> 4788 Can&apos;t Control </a> from Perth, Western Australia.
           <br /> To learn more check out the other pages! 
           <br /> The source code for this website can be found on <a href='https://github.com/spacey-sooty/Isaac-T' className="link">Github</a>
         </p>
