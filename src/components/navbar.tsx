@@ -40,7 +40,7 @@ export default function Navbar() {
     <div className={styles.navbar}>
       <>
         <div>
-          <NavLink title="Home" url="/" />
+          <NavLink title="Isaac-T" url="/" />
         </div>
         <div className={styles.right}>
           {navbarData.pages.map((page) => (
