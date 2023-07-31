@@ -1,3 +1,5 @@
+@import 'abstracts/index.module.scss';
+
 @font-face {
     font-family: "Moonbeam Regular";
     src: url("https://db.onlinewebfonts.com/t/3a775cc0fc167a7000d81c790839b807.eot");
@@ -15,6 +17,7 @@
 h1 {
   text-align: center;
   font-size: 250%;
+  color: black;
 }
 
 h2 {
@@ -27,8 +30,8 @@ p {
 }
 
 :root {
-  background-color: rgb(251, 135, 226);
-  color: black;
+  background-color: $background-colour;
+  color: $root-colour;
   h1, h2 {
     font-family: "Moonbeam Regular";
   }
@@ -42,5 +45,5 @@ p {
 }
 
 .link {
-  color: rgb(23, 226, 236);
+  color: $link-colour;
 }
