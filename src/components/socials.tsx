@@ -19,7 +19,7 @@ export default function SocialsLink(props: {name: string, logo: React.ReactNode,
 function Github() {
   return (
     <div className="hero">
-      <SocialsLink name={"Github"} logo={<BsGithub size={35} color='black'/>} url={"https://github.com/spacey-sooty"} Name={styles.gh} />
+      <SocialsLink name={"Github"} logo={<BsGithub size={30} color='black'/>} url={"https://github.com/spacey-sooty"} Name={styles.gh} />
     </div>
   )
 }
@@ -27,7 +27,7 @@ function Github() {
 function Discord() {
   return (
     <div className='hero'>
-      <SocialsLink name={"Discord"} logo={<BsDiscord size={35} color='white' />} url="" Name={styles.discord} />
+      <SocialsLink name={"Discord"} logo={<BsDiscord size={30} color='white' />} url="" Name={styles.discord} />
     </div>
   )
 }

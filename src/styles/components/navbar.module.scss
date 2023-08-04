@@ -1,3 +1,5 @@
+@import '../abstracts/index.module.scss';
+
 .navbar {
   background-color: black;
   display: flex;
@@ -11,13 +13,13 @@
 .active {
   margin: 15px;
   font-size: 40px;
-  color: rgb(23, 226, 236);
+  color: $link-colour;
 }
 
 .inactive {
   margin: 15px;
+  color: $background-colour;
   font-size: 40px;
-  color: rgb(251, 135, 226);
 }
 
 .right {
