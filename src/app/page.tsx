@@ -1,4 +1,4 @@
-import styles from '@/styles/pages/page.module.scss'
+import styles from '@/styles/pages/home.module.scss'
 import Image from 'next/image'
 
 export default function Home() {
