@@ -1,8 +1,10 @@
+@import '../abstracts/index.module.scss';
+
 .sourceCode {
   display: flex;
   font-size: 20px;
-  color: black;
   text-decoration: none;
+  color: $root-colour;
 }
 
 .bottomPageRight {
