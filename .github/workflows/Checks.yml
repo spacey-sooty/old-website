@@ -13,6 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: Turbo
+      run: npm install turbo --global
     - name: Install
       run: yarn install
     # - name: Lint
@@ -28,6 +30,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: Turbo
+      run: npm install turbo --global
     - name: Install
       run: yarn install
     # - name: Lint
