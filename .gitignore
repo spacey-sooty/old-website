@@ -38,4 +38,8 @@ next-env.d.ts
 /.vscode
 
 # Turbo repo
-/.turbo
+.turbo
+
+# PWA
+public/sw.js
+public/workbox-*

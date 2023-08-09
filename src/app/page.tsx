@@ -7,7 +7,10 @@ export default function Home() {
   return(
     <div className='hero'>
       <div>
-        <h1 className={styles.heading}> Hi my name is Isaac Turner! </h1>
+        <div>
+          <h1 className={styles.heading}> Hi I&apos;m Isaac Turner! </h1>
+          <p className={styles.pronouns}> They / Them </p>
+        </div>
         <Image src="/me.png" alt="Isaac Turner" width={w} height={h} className={styles.image} priority />
         <p className={styles.text}>
         I am a student, software developer and programmer for 
