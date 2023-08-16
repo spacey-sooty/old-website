@@ -1,37 +1,16 @@
 import styles from '@/styles/pages/home.module.scss'
 import Image from 'next/image'
 
-// export async function getProps(): Promise<{ props: { hello: Promise<string>; }; }> {
-// export async function getProps(): Promise<any> {
-export async function getProps() {
-  try {
-    const hello: any = await fetch(process.env.URL + "/api/hello");
-
-    if (!hello) {
-      throw new Error("Failed to fetch data!");
-    }
-
-    var props : typeof hello = hello;
-
-    // return { props: { hello: hello.text() } };
-    return props.text();
-  } catch(err) {
-    console.log(err);
-  }
-};
-
 export default async function Home() {
   const w = 794 * 0.4;
   const h = 968 * 0.4;
-
-  const data = await getProps();
 
   return(
     <div className='hero'>
       <div>
         <div>
           {/* <h1 className={styles.heading}> Hi I&apos;m Isaac Turner! </h1> */}
-          <h1 className={styles.heading}> {data.props.hello} </h1>
+          <h1 className={styles.heading}> Hi I&apos;m Isaac Turner! </h1>
           <p className={styles.pronouns}> They / Them </p>
         </div>
         <Image src="/me.png" alt="Isaac Turner" width={w} height={h} className={styles.image} priority />
