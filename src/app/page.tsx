@@ -30,8 +30,8 @@ export default async function Home() {
     <div className='hero'>
       <div>
         <div>
-          <h1 className={styles.heading}> Hi I&apos;m Isaac Turner! </h1>
-          {/* <h1 className={styles.heading}> {data.props.hello} </h1> */}
+          {/* <h1 className={styles.heading}> Hi I&apos;m Isaac Turner! </h1> */}
+          <h1 className={styles.heading}> {data.props.hello} </h1>
           <p className={styles.pronouns}> They / Them </p>
         </div>
         <Image src="/me.png" alt="Isaac Turner" width={w} height={h} className={styles.image} priority />
