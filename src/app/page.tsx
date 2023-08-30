@@ -1,13 +1,15 @@
 import styles from '@/styles/pages/home.module.scss'
 import Image from 'next/image'
 
-export default function Home() {
+export default async function Home() {
   const w = 794 * 0.4;
   const h = 968 * 0.4;
+
   return(
     <div className='hero'>
       <div>
         <div>
+          {/* <h1 className={styles.heading}> Hi I&apos;m Isaac Turner! </h1> */}
           <h1 className={styles.heading}> Hi I&apos;m Isaac Turner! </h1>
           <p className={styles.pronouns}> They / Them </p>
         </div>

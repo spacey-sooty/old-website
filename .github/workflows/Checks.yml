@@ -1,4 +1,4 @@
-name: Checks
+name: Build and Lint Checks 
 
 on:
   push:
@@ -13,10 +13,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - uses: pnpm/action-setup@v2.4.0
+      with:
+        version: latest
     - name: Turbo
       run: npm install turbo --global
     - name: Install
-      run: yarn install
+      run: pnpm install
     - name: Build-Lint
       run: turbo build lint
 
@@ -26,9 +29,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - uses: pnpm/action-setup@v2.4.0
+      with:
+        version: latest        
     - name: Turbo
       run: npm install turbo --global
     - name: Install
-      run: yarn install
+      run: pnpm install
     - name: Build-Lint
       run: turbo build lint
