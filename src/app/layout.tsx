@@ -1,11 +1,7 @@
 import '@/styles/globals.scss'
 import { Inter } from 'next/font/google'
 import Footer from '@/components/footer'
-import dynamic from 'next/dynamic'
-
-const Navbar = dynamic(() => import('@/components/navbar'), {
-  ssr: false,
-})
+import Navbar from '@/components/navbar'
 
 const inter = Inter({ subsets: ['latin'] })
 

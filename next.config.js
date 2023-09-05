@@ -10,10 +10,7 @@ const withPWA = require('next-pwa')({
 const nextConfig = {
     experimental: {
       turbo: {
-        loaders: {
-          '.tsx': {
-
-          },
+        rules: {
       },
     },
   }

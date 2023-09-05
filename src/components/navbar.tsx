@@ -1,22 +1,7 @@
 "use client"
 import React from "react";
-import styles from '@/styles/components/navbar.module.scss'
-import Link from 'next/link'
-
-function isActive(url: string): string {
-  var root = window.location.host;
-  url = "http://" + root + url;
-  var className = (url == window.location.href) ? styles.active : styles.inactive;
-  return className;
-}
-
-function NavLink(input: {title: string, url: string}) {
-  return (
-      <Link href={input.url} className={isActive(input.url)} onClick={window.location.reload}>
-        {input.title}
-      </Link>
-  )
-}
+import styles from '@/styles/components/navbar.module.scss';
+import Link from "next/link";
 
 const navbarData = {
   pages: [
@@ -33,21 +18,22 @@ const navbarData = {
         url: '/portfolio'
       },
   ],
-}
+};
 
-export default function Navbar() {
-  return (
-    <div className={styles.navbar}>
-      <>
-        <div>
-          <NavLink title="Isaac-T" url="/" />
-        </div>
-        <div className={styles.right}>
-          {navbarData.pages.map((page) => (
-            <NavLink key={page.title} title={page.title} url={page.url} />
-          ))}
-        </div>
-      </>
-    </div>
-  )
-}
+type Props = {};
+
+export default class Navbar extends React.Component {
+  constructor(props: Props) { super(props) }
+
+  isActive(url: string): string {
+    var root = window.location.host;
+    url = "http://" + root + url;
+    var className = (url == window.location.href) ? styles.active : styles.inactive;
+    return className;
+  }
+
+  render(): React.ReactNode {
+    return (
+      <div>
+      </div>
+)}};
