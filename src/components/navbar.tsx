@@ -22,18 +22,21 @@ const navbarData = {
 
 type Props = {};
 
-export default class Navbar extends React.Component {
-  constructor(props: Props) { super(props) }
+export default function Navbar() {
+  React.useEffect(() => {
+    function isActive(url: string): string {
+      var root = window.location.host;
+      url = "http://" + root + url;
+      var className = (url == window.location.href) ? styles.active : styles.inactive;
+      return className;
+    }
+  }, []);
 
-  isActive(url: string): string {
-    var root = window.location.host;
-    url = "http://" + root + url;
-    var className = (url == window.location.href) ? styles.active : styles.inactive;
-    return className;
-  }
-
-  render(): React.ReactNode {
-    return (
-      <div>
-      </div>
-)}};
+  return (
+    <div>
+      <Link href="/">
+        Isaac-T
+      </Link>
+    </div>
+  )
+};
