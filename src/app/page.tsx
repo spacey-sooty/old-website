@@ -1,7 +1,7 @@
 import styles from '@/styles/pages/home.module.scss'
 import Image from 'next/image'
 
-export default async function Home() {
+export default function Home() {
   const w = 794 * 0.4;
   const h = 968 * 0.4;
 

@@ -3,25 +3,6 @@ import React from "react";
 import styles from '@/styles/components/navbar.module.scss';
 import Link from "next/link";
 
-const navbarData = {
-  pages: [
-      {
-        title: 'About',
-        url: '/about',
-      },
-      {
-        title: 'Socials',
-        url: '/socials',
-      },
-      {
-        title: 'Portfolio',
-        url: '/portfolio'
-      },
-  ],
-};
-
-type Props = {};
-
 export default function Navbar() {
   const [active, setActive] = React.useState(0);
 
@@ -34,7 +15,7 @@ export default function Navbar() {
         num = 1;
       } else if (root + "/portfolio" == url) {
         num = 2;
-      } else if (root + "socials" == url) {
+      } else if (root + "/socials" == url) {
         num = 3;
       } else {
         num = 0;
@@ -48,19 +29,20 @@ export default function Navbar() {
 
   var html;
 
-  if (active == 0) {
-    html = (
-      <div>
-        <Link href="/" className={styles.active}>
-          Isaac-T
-        </Link>
-      </div>
-    )
-  } else if (active == 1) {
+  if (active == 1) {
     html = (
       <div>
         <Link href="/" className={styles.inactive}>
           Isaac-T
+        </Link>
+        <Link href="/about" className={styles.active}>
+          About
+        </Link>
+        <Link href="/portfolio" className={styles.inactive}>
+          Portfolio
+        </Link>
+        <Link href="/socials" className={styles.inactive}>
+          Socials
         </Link>
       </div>
     )
@@ -70,13 +52,48 @@ export default function Navbar() {
         <Link href="/" className={styles.inactive}>
           Isaac-T
         </Link>
+        <Link href="/about" className={styles.inactive}>
+          About
+        </Link>
+        <Link href="/portfolio" className={styles.active}>
+          Portfolio
+        </Link>
+        <Link href="/socials" className={styles.inactive}>
+          Socials
+        </Link>
       </div>
     )
-  } else {
+  } else if (active == 3) {
     html = (
       <div>
         <Link href="/" className={styles.inactive}>
           Isaac-T
+        </Link>
+        <Link href="/about" className={styles.inactive}>
+          About
+        </Link>
+        <Link href="/portfolio" className={styles.inactive}>
+          Portfolio
+        </Link>
+        <Link href="/socials" className={styles.active}>
+          Socials
+        </Link>
+      </div>
+        )
+  } else {
+    html = (
+      <div>
+        <Link href="/" className={styles.active}>
+          Isaac-T
+        </Link>
+        <Link href="/about" className={styles.inactive}>
+          About
+        </Link>
+        <Link href="/portfolio" className={styles.inactive}>
+          Portfolio
+        </Link>
+        <Link href="/socials" className={styles.inactive}>
+          Socials
         </Link>
       </div>
     )
