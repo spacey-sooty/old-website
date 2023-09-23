@@ -1,11 +1,5 @@
-import '@/styles/globals.scss'
+import './globals.scss'
 import { Inter } from 'next/font/google'
-import Footer from '@/components/footer'
-import dynamic from 'next/dynamic'
-
-const Navbar = dynamic(() => import('@/components/navbar'), {
-  ssr: false,
-})
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,9 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar />
         {children}
-        <Footer />
       </body>
     </html>
   )

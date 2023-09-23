@@ -7,16 +7,6 @@ const withPWA = require('next-pwa')({
 })
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    experimental: {
-      turbo: {
-        loaders: {
-          '.tsx': {
-
-          },
-      },
-    },
-  }
-}
+const nextConfig = {}
 
 module.exports = withPWA(nextConfig)
