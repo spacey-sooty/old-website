@@ -8,26 +8,32 @@ nav {
 
   .home {
     color: white;
-    padding: 7.5px;
+    padding: 0.5rem;
     font-size: 30px;
   }
 
   .about {
     color: white;
-    padding: 7.5px;
+    padding: 0.5rem;
     font-size: 30px;
+    position: absolute;
+    right: 0.5rem;
   }
 
   .portfolio {
     color: white;
-    padding: 7.5px;
+    padding: 0.5rem;
     font-size: 30px;
+    position: absolute;
+    right: 6rem;
   }
 
   .blog {
     color: white;
-    padding: 7.5px;
+    padding: 0.5rem;
     font-size: 30px;
+    position: absolute;
+    right: 13.5rem;
   }
 }
 
