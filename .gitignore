@@ -8,9 +8,8 @@
 # testing
 /coverage
 
-# next.js
-/.next/
-/out/
+#astro
+/dist
 
 # production
 /build
@@ -32,10 +31,10 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts
 
-# vscode garbage
+# editor garbage
 /.vscode
+/.idea
 
 # Turbo repo
 .turbo
