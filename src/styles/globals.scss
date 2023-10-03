@@ -10,3 +10,18 @@ p {
   font-size: 1.5rem;
 }
 
+:root,
+  :root.light {
+    --bg-color: white;
+    --text-color: black;
+  }
+
+  :root.dark {
+    --bg-color: #fff;
+    --text-color: #123;
+  }
+
+.wrapper {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
