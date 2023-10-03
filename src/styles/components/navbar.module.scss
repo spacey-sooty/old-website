@@ -1,5 +1,5 @@
 nav {
-  background-color: black;
+  background-color: var(--text-color);
   display: flex;
   position: absolute;
   top: 0vh;
@@ -7,27 +7,33 @@ nav {
   width: 100vw;
 
   .home {
-    color: white;
-    padding: 7.5px;
-    font-size: 30px;
+    color: var(--bg-color);
+    padding: 0.5rem;
+    font-size: 1.9rem;
   }
 
   .about {
-    color: white;
-    padding: 7.5px;
-    font-size: 30px;
+    color: var(--bg-color);
+    padding: 0.5rem;
+    font-size: 1.9rem;
+    position: absolute;
+    right: 12.5rem;
   }
 
   .portfolio {
-    color: white;
-    padding: 7.5px;
-    font-size: 30px;
+    color: var(--bg-color);
+    padding: 0.5rem;
+    font-size: 1.9rem;
+    position: absolute;
+    right: 5rem;
   }
 
   .blog {
-    color: white;
-    padding: 7.5px;
-    font-size: 30px;
+    color: var(--bg-color);
+    padding: 0.5rem;
+    font-size: 1.9rem;
+    position: absolute;
+    right: 0.5rem;
   }
 }
 
