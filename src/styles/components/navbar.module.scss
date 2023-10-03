@@ -6,16 +6,17 @@ nav {
   left: 0vw;
   width: 100vw;
 
+  //TODO fix on GALAXY Fold and GALAXY S8+
   .home {
     color: white;
     padding: 0.5rem;
-    font-size: 30px;
+    font-size: 1.9rem;
   }
 
   .about {
     color: white;
     padding: 0.5rem;
-    font-size: 30px;
+    font-size: 1.9rem;
     position: absolute;
     right: 0.5rem;
   }
@@ -23,7 +24,7 @@ nav {
   .portfolio {
     color: white;
     padding: 0.5rem;
-    font-size: 30px;
+    font-size: 1.9rem;
     position: absolute;
     right: 6rem;
   }
@@ -31,7 +32,7 @@ nav {
   .blog {
     color: white;
     padding: 0.5rem;
-    font-size: 30px;
+    font-size: 1.9rem;
     position: absolute;
     right: 13.5rem;
   }
