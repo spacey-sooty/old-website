@@ -1,5 +1,7 @@
 ---
 const {title, content } = Astro.props
+import '@styles/globals.scss'
+import Navbar from '@components/navbar.svelte'
 ---
 
 <html lang="en">
@@ -12,7 +14,9 @@ const {title, content } = Astro.props
   </head>
   <body>
     <main>
+      <Navbar />
       <slot />
     </main>
   </body>
 </html>
+
