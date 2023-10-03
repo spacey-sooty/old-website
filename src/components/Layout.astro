@@ -1,0 +1,22 @@
+---
+const {title, content } = Astro.props
+import '@styles/globals.scss'
+import Navbar from '@components/navbar.svelte'
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title> {title} </title>
+    <meta name="content" content={content} />
+  </head>
+  <body>
+    <main>
+      <Navbar />
+      <slot />
+    </main>
+  </body>
+</html>
+

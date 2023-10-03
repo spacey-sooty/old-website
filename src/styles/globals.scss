@@ -1,49 +1,12 @@
-@import 'abstracts/index.module.scss';
-
-@font-face {
-    font-family: "Moonbeam Regular";
-    src: url("https://db.onlinewebfonts.com/t/3a775cc0fc167a7000d81c790839b807.eot");
-    src: url("https://db.onlinewebfonts.com/t/3a775cc0fc167a7000d81c790839b807.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/3a775cc0fc167a7000d81c790839b807.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/3a775cc0fc167a7000d81c790839b807.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/3a775cc0fc167a7000d81c790839b807.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/3a775cc0fc167a7000d81c790839b807.svg#Moonbeam Regular")format("svg");
-}
-
-* {
-  box-sizing: border-box;
+h1, h2 {
+  text-align: center;
 }
 
 h1 {
-  text-align: center;
-  font-size: 250%;
-  color: $title-colour;
-}
-
-h2 {
-  text-align: center;
-  font-size: 200%;
+  font-size: 4rem;
 }
 
 p {
-  font-size: 125%;
+  font-size: 1.5rem;
 }
 
-:root {
-  background-color: $background-colour;
-  color: $root-colour;
-  h1, h2 {
-    font-family: "Moonbeam Regular";
-  }
-}
-
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.link {
-  color: $link-colour;
-}
