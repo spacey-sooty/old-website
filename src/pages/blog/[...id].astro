@@ -1,0 +1,19 @@
+---
+import Layout from '@components/Layout.astro'
+
+export function getStaticPaths () {
+ return [
+    fetch()
+  ];
+}
+
+const title = fetch().finally().toString();
+const content = fetch().finally().toString();
+const cont = fetch().finally().toString();
+---
+
+<Layout title={title} content={cont}>
+  <h1> {title} </h1>
+  <p> {content} </p>
+</Layout>
+
