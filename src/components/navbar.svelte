@@ -7,5 +7,6 @@
   <a href="/about" class={styles.about}> About </a>
   <a href="/portfolio" class={styles.portfolio}> Portfolio </a>
   <a href="/blog" class={styles.blog}> Blog </a>
+  <a href="/socials" class={styles.socials}> Socials </a>
 </nav>
 
