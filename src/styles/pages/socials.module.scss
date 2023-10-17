@@ -1,5 +1,37 @@
-.a {
+@keyframes anim1 {
+  from { left: -10vw; }
+  to { left: 44vw; }
+}
+
+@keyframes anim2 {
+  from { left: -20vw; }
+  to { left: 44vw; }
+}
+
+@mixin hello {
+  display: flex;
   color: white;
-  font-size: 2rem;
+  font-size: 2.4rem;
+  padding: 0.75rem;
+  position: absolute;
+  left: 44vw;
+}
+
+.hello1 {
+  @include hello;
+  top: 20vh;
+  animation-name: anim1;
+  animation-duration: 4s;
+}
+
+.hello2 {
+  @include hello;
+  top: 30vh;
+  animation-name: anim2;
+  animation-duration: 4.5s;
+}
+
+.hello:hover {
+  font-size: 2.5rem;
 }
 
