@@ -1,9 +1,13 @@
 ---
 import styles from '@styles/pages/blog.module.scss';
 import Layout from '@components/Layout.astro';
+import Post from '@components/post.svelte';
 ---
 
 <Layout title="My Blog" content="The home page for my blog">
-  <h1> Coming Soon! </h1>
+  <h1> My Blog! </h1>
+  <div>
+    <Post title="My First Post!" summary="My first blog post about how I made this website" link="/blog/first-post"/>
+  </div>
 </Layout>
 
