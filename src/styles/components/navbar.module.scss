@@ -13,20 +13,12 @@ nav {
     font-size: 1.9rem;
   }
 
-  .home:hover {
-    font-size: 2.2rem;
-  }
-
   .about {
     color: var(--bg-color);
     padding: 0.75rem;
     font-size: 1.9rem;
     position: absolute;
     right: 20rem;
-  }
-
-  .about:hover {
-    font-size: 2.2rem;
   }
 
   .portfolio {
@@ -37,10 +29,6 @@ nav {
     right: 5.75rem;
   }
 
-  .portfolio:hover {
-    font-size: 2.2rem;
-  }
-
   .blog {
     color: var(--bg-color);
     padding: 0.75rem;
@@ -49,20 +37,12 @@ nav {
     right: 0.9rem;
   }
 
-  .blog:hover {
-    font-size: 2.2rem;
-  }
-
   .socials {
     color: var(--bg-color);
     padding: 0.75rem;
     font-size: 1.9rem;
     position: absolute;
     right: 13.5rem;
-  }
-
-  .socials:hover {
-    font-size: 2.2rem;
   }
 }
 
