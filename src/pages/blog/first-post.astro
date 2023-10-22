@@ -1,8 +1,37 @@
 ---
 import Layout from '@components/Layout.astro'
+import styles from '@styles/pages/blog/1.module.scss'
 ---
 
 <Layout title="My First Post" content="My first post about how I built this website">
   <h1> My First Blog Post! </h1>
+  <div class={styles.center}>
+    <q>Sometimes the threat is greater than the execution</q>
+    - Daniel Naroditsky 
+  </div>
+  <p class={styles.p}>
+    When I first started making this website it was a NextJS project using a ton of fancy tools with thousands and thousands of lines.
+    This was a mistake.
+    Why was this a mistake I here you asking.
+    Well NextJS is an incredibly powerful tool, built for creating powerful fullstack React applications.
+    So I rewrote it.
+    <br />
+    <br />
+    What did I do my rewrite in and how did I choose it?
+    Well I did my rewrite in Astro.
+    Astro is a powerful frontend framework which is designed to be plug and playable with frontend libraries.
+    For example parts of my website are built using Svelte, but I could also use HTMX, React or any other frontend library.
+    <br />
+    <br />
+    What makes it better for my use case?
+    Well unlike NextJS Astro has no in built backend.
+    NextJS is a huge and complex framework which is nothing to be afraid of.
+    It is one of my first choices for building Fullstack applications but all I needed for this project was a simple frontend.
+    <br />
+    <br />
+    So what should be taken away from this?
+    Well I think another quote can be applied to this, don&apos;t shoot at sparrows with cannons.
+    Using NextJS to build a simple frontend is the equivalent of using a cannon to shoot at sparrows, its so far overkill it makes it less efficient.
+  </p>
 </Layout>
 
