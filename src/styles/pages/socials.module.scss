@@ -17,6 +17,14 @@
   left: 44vw;
 }
 
+.hello1:hover {
+  font-size: 2.75rem;
+}
+
+.hello2:hover {
+  font-size: 2.75rem;
+}
+
 .hello1 {
   @include hello;
   top: 20vh;
